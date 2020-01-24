@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Smurf = props => {
+const SmurfCard = props => {
   const [smurf, editSmurf] = useState(props.smurf);
   const [edit, setEdit] = useState(false);
 
@@ -48,11 +48,11 @@ const Smurf = props => {
             onChange={e => editSmurfHandler(e)}
             placeholder="Height"
           />
-          <button>Finish Editing</button>{" "}
+          <button>Finish Editing</button>{' '}
         </form>
       ) : null}
     </>
   );
 };
 
-export default Smurf;
+export default SmurfCard;
